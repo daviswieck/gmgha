@@ -1,0 +1,22 @@
+{
+  "name": "GMG",
+  "version": "3.0.1",
+  "slug": "gmg",
+  "description": "Receive wireless data via a green mountain grill",
+  "url": "https://github.com/daviswieck/gmgha/new/main/gmg",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "application",
+  "boot": "auto",
+  "map": ["config:rw"],
+  "services": ["mqtt:want"],
+  "usb": false,
+  "udev": true,
+  "options": {
+    "gmg_conf_file": "",
+    "retain": true
+  },
+  "schema": {
+    "gmg_conf_file": "str?",
+    "retain": "bool"
+  }
+}
